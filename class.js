@@ -5,6 +5,18 @@ class obj{
     this.w = w
     this.h = h
     this.a = a
-
-}
+    }
+    
+    des_obj(){
+        des.fillStyle = this.a
+        des.fillRect(this.x,this.y,this.w,this.h)
+    }
+    des_quad(){
+        des.beginPath() // começo do obj
+        des.stokeStyle = this.a
+        des.lineWidth = '3'
+        des.rect(this.x,this.y,this.w,this.h)
+        des.closePath() // fim do obj
+        des.stroke()    
+    }
 }
