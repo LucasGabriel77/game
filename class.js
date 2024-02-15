@@ -12,11 +12,11 @@ class obj{
         des.fillRect(this.x,this.y,this.w,this.h)
     }
     des_quad(){
-        des.beginPath() // começo do obj
-        des.stokeStyle = this.a
-        des.lineWidth = '3'
+        // des.beginPath() // começo do obj
+        des.strokeStyle = this.a
+        des.lineWidth = '4'
         des.rect(this.x,this.y,this.w,this.h)
-        des.closePath() // fim do obj
+        // des.closePath() // fim do obj
         des.stroke()    
     }
 }
